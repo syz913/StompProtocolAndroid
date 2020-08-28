@@ -66,11 +66,11 @@ dependencies {
     testImplementation 'ch.qos.logback:logback-classic:1.2.3'
 }
 
-//task sourcesJar(type: Jar) {
-//    from android.sourceSets.main.java.srcDirs
-//    classifier = 'sources'
-//}
-//
-//artifacts {
-//    archives sourcesJar
-//}
+task sourcesJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier = 'sources'
+}
+
+artifacts {
+    archives sourcesJar
+}
