@@ -1,7 +1,11 @@
 # STOMP protocol via WebSocket for Android
 
-[![Release](https://jitpack.io/v/NaikSoftware/StompProtocolAndroid.svg)](https://jitpack.io/#NaikSoftware/StompProtocolAndroid)
-
+[![Release](https://jitpack.io/v/NaikSoftware/StompProtocolAndroid.svg)](https://jitpack.io/#syz913/StompProtocolAndroid)
+```
+dependencies {
+	implementation 'com.github.syz913:StompProtocolAndroid:Tag'
+}
+```
 ## Overview
 
 This library provide support for STOMP protocol https://stomp.github.io/
