@@ -85,7 +85,11 @@ public class StompMessage {
             matcher.find();
             headers.add(new StompHeader(matcher.group(1), matcher.group(2)));
         }
-    
+        try {
+            reader.skip("\n\n");
+        }catch (Exception e){
+            e.printStackTrace();
+        }
         reader.useDelimiter(TERMINATE_MESSAGE_SYMBOL);
         String payload = reader.hasNext() ? reader.next() : null;
 
